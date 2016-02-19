@@ -1,0 +1,63 @@
+|?FAILEDLOGIN=<div class="ui red message"><i class="ban icon"></i> 用户名或密码错误.</div>|
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>|HOSTNAME| - 控制面板</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" class="ui" href="images/semantic.css">
+    <link href="images/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="pusher">
+		<div class="container">
+		<div class="ui two column centered grid login-form">
+			<div class="column">
+				
+				<div class="ui two column centered grid">
+					<div class="column">
+					<img src="images/sign.png" alt="从前慢" />
+					</div>
+					<div class="column">
+						
+						<form method="post" action="/CMD_LOGIN" name="loginForm" id="loginForm">
+						<input type="hidden" value="/" name="referer"/>
+							<div class="ui large form">
+						
+								<div class="field">
+									<label for="username">用户名:</label>
+									<input type="text" id="username" name="username" placeholder="用户名" required>
+								</div>
+					
+								<div class="field">
+									<label for="password">密码: </label>
+									<input type="password" id="password" name="password" placeholder="密码" required>
+								</div>
+								
+								<div class="field">
+									<button type="submit" class="large fluid ui button">登录面板</button>
+								</div>
+						
+								|FAILEDLOGIN|
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				|*if LOST_PASSWORD="yes"|
+				<div class="sixteen wide column centered grid right">
+					<div class="column">
+						<a href="/CMD_LOST_PASSWORD" tabindex="2">找回密码?</a>
+					</div>
+				</div>
+				|*endif|
+			</div>
+		</div>
+		<div class="footer">
+		从前车马很慢，书信很远，一生只够爱一人
+		</div>
+		</div>
+	</div>
+</body>
+</html>

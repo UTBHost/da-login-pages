@@ -1,0 +1,148 @@
+/*
+	Title: CongQianMan-Login-CSS
+	Author: Yvonne Lu (Min)
+	Thanks: Ariane Lu (Aivier)
+	You can Donate us via Alipay ariane@biu.click
+*/
+::selection{
+background:rgba(243, 115, 186, 0.88);
+color:#FFF;
+}
+::-moz-selection{
+background:rgba(243, 115, 186, 0.88);
+color:#FFF;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:rgba(243, 115, 186, 0.88)!important;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:rgba(243, 115, 186, 0.88)!important;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:rgba(243, 115, 186, 0.88)!important;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:rgba(243, 115, 186, 0.88)!important;
+}
+body {
+	font-size: 14px;
+	line-height: 1.428571429;
+	background: url(bg.jpg);
+	font-family:'Hiragino Sans GB','WenQuanYi Micro Hei','Noto Sans CJK SC DemiLight','Source Han Sans CN',source-han-sans-simplified-c,'PingFang SC','Microsoft Yahei',STHeitiSC-Light,sans-serif!important;
+}
+.ui.grid {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: RGBA(110, 217, 160, .7);
+	font-weight: bold;
+}
+
+.pusher {
+	padding-top: 20%;
+}
+
+.container {
+	min-width: 320px;
+}
+	
+.ui.centered.grid h1 {
+	text-align: center;
+	color: #FFF;
+	font-size: 48px;
+	line-height: 2.5em;
+	font-weight: normal;
+	text-decoration: none;
+}
+.ui.grid+.grid {
+	text-align: right;
+}
+.ui.form {
+	margin-left: 5%;
+}
+.ui.form .field {
+	margin-bottom: 1.2em;
+}
+.ui.form .field:nth-of-type(2) {
+	margin-bottom: 2em;
+}
+.ui.form .field>label {
+	display: none;
+}
+.ui.form .field .button {
+	color: #FFF;
+	background: rgba(249, 56, 154, 0.88);
+	font-family:'Hiragino Sans GB','WenQuanYi Micro Hei','Noto Sans CJK SC DemiLight','Source Han Sans CN',source-han-sans-simplified-c,'PingFang SC','Microsoft Yahei',STHeitiSC-Light,sans-serif!important;
+}
+
+.ui.form input[type=text],
+.ui.form input[type=password] {
+	display: inline-block;
+	vertical-align: top;
+	color: rgba(243, 115, 186, 0.88);
+	background: transparent;
+	border: 1px solid rgba(243, 115, 186, 0.88);
+	border-radius: 4px;
+	box-shadow: none;
+	width: 100%;
+	box-sizing: border-box;
+	font-family:'Hiragino Sans GB','WenQuanYi Micro Hei','Noto Sans CJK SC DemiLight','Source Han Sans CN',source-han-sans-simplified-c,'PingFang SC','Microsoft Yahei',STHeitiSC-Light,sans-serif!important;
+}
+.ui.form input[type=text]:hover,
+.ui.form input[type=password]:hover {
+	border-color: rgba(249, 21, 105, 0.88);
+	background: transparent;
+}
+.ui.form input[type=text]:focus,
+.ui.form input[type=password]:focus {
+	color: rgba(249, 21, 105, 0.88);
+	background: transparent;
+	border-color: rgba(249, 21, 105, 0.88);
+	border-radius: 4px;
+	outline: none;
+	box-shadow: none;
+}
+.footer {
+	color: #F9178A;
+	content: ' ';
+	clear: both;
+	text-align: center;
+	font-family:'Hiragino Sans GB','WenQuanYi Micro Hei','Noto Sans CJK SC DemiLight','Source Han Sans CN',source-han-sans-simplified-c,'PingFang SC','Microsoft Yahei',STHeitiSC-Light,sans-serif;
+}
+.footer a {
+	color: #F9178A;
+}
+@media (max-width: 1200px) {
+	.ui.centered.grid h1 {
+		font-size: 40px;
+		line-height: 1.8em;
+	}
+}
+@media (max-width: 1300px) {
+	.ui.centered.grid h1 {
+		margin: 0;
+		line-height: 1.8em;
+	}
+}
+@media (max-width: 930px) {
+	.pusher {
+	    padding-top: 10%;
+	}
+	.ui.centered.grid h1 {
+		margin: 0 0 10px;
+	}
+
+	.ui.centered.grid .ui.centered.grid .column:last-child {
+		border-left: 0 none;
+	}
+	.ui.form {
+		margin-left: 0;
+	}
+	.ui[class*="two column"].grid>.column {
+		width: 96%;
+	}
+	.sixteen.column>.column {
+		padding: 1rem;
+	}
+}
